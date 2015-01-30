@@ -1,0 +1,45 @@
+var BootState = function(game) {
+};
+
+BootState.prototype.preload = function() {
+};
+
+BootState.prototype.create = function() {
+    if (game.device.desktop) {
+
+    } else {
+
+    }
+
+    // game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+    // game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
+    // game.scale.refresh();
+
+    game.stage.backgroundColor = G.backgroundColor;
+
+    // Keyboard capture
+    game.input.keyboard.addKeyCapture([
+        Phaser.Keyboard.LEFT,
+        Phaser.Keyboard.RIGHT,
+        Phaser.Keyboard.UP,
+        Phaser.Keyboard.DOWN,
+        Phaser.Keyboard.SPACEBAR
+    ]);
+
+    // Focus game
+    game.canvas.setAttribute('tabindex', '1');
+    game.canvas.focus();
+
+    game.state.start('webcam');
+};
+
+BootState.prototype.update = function() {
+};
+
+var game;
+window.onload = function() {
+    game = new Phaser.Game(G.width, G.height, Phaser.AUTO, 'cam');
+
+    game.state.add('boot', BootState, true);
+    game.state.add('webcam', WebcamState, false);
+};
