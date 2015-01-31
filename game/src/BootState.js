@@ -11,10 +11,6 @@ BootState.prototype.create = function() {
 
     }
 
-    // game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-    // game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
-    // game.scale.refresh();
-
     game.time.desiredFps = 30;
 
     game.stage.backgroundColor = G.backgroundColor;

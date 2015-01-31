@@ -5,7 +5,5 @@ var G = {
     camWidth: 640,
     camHeight: 480,
 
-    sfx: {}, /* sound effects */
-
     backgroundColor: 0x4488cc
 };

@@ -1,3 +1,6 @@
+// More Phaser plugins here: https://github.com/photonstorm/phaser-plugins
+
+
 /**
 * Provides access to the Webcam (if available)
 */
