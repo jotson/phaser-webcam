@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset='utf-8'>
+    <title>Webcam</title>
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="lib/phaser.min.js"></script>
+    <script type="text/javascript" src="src/G.js"></script>
+    <script type="text/javascript" src="src/BootState.js"></script>
+    <script type="text/javascript" src="src/WebcamPlugin.js"></script>
+    <script type="text/javascript" src="src/WebcamState.js"></script>
+</head>
+<body>
+    <div id="left-panel">
+        <div id="cam"></div>
+    
+        <p>
+            Your browser must support webcams for this demo to work.
+        </p>
+        <p>For best results:</p>
+        <ol>
+            <li>Have good lighting</li>
+            <li>Click the <span style="color: red">red</span> button</li>
+            <li>Right-click photos to save them</li>
+        </ol>
+        <p>
+            Created by <a href="http://twitter.com/yafd" target="_new">@yafd</a>
+            with <a href="http://phaser.io" target="_new">Phaser</a>.
+        </p>
+        <p>
+            <a href="https://github.com/jotson/phaser-webcam" target="_new">Source @ GitHub</a>
+        </p>
+        <p>
+            Copyright © 2015 <a href="http://flagrantdisregard.com" target="_new">John Watson</a>
+            <br>Licensed under MIT license.
+        </p>
+    </div>
+    <div id="output" style="display: none">
+        <a href="#" target="_new"><img id="shot-full" title="full"></a>
+        <a href="#" target="_new"><img id="shot-120" title="120px"></a>
+        <a href="#" target="_new"><img id="shot-72" title="72px"></a>
+        <a href="#" target="_new"><img id="shot-48" title="48px"></a>
+    </div>
+</body>
+</html>
