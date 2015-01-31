@@ -15,6 +15,8 @@ BootState.prototype.create = function() {
     // game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
     // game.scale.refresh();
 
+    game.time.desiredFps = 30;
+
     game.stage.backgroundColor = G.backgroundColor;
 
     // Keyboard capture
@@ -38,7 +40,7 @@ BootState.prototype.update = function() {
 
 var game;
 window.onload = function() {
-    game = new Phaser.Game(G.width, G.height, Phaser.AUTO, 'cam');
+    game = new Phaser.Game(G.width, G.height, Phaser.CANVAS, 'cam');
 
     game.state.add('boot', BootState, true);
     game.state.add('webcam', WebcamState, false);

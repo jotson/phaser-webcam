@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+html, body {
+    background-color: #fff;
+    font-family: "Share Tech Mono", monospace;
+}
+
+#cam {
+    width: 360px;
+    height: 360px;
+    float: left;
+    outline: none;
+}
+
+#output {
+    float: left;
+    width: 360px;
+    margin-left: 50px;
+    overflow: auto;
+}
+
+#output p {
+    margin: 0;
+}
+
+#shot-full {
+    float: left;
+}
+
+#shot-120 {
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 120px
+}
+
+#shot-72 {
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 72px
+}
+
+#shot-48 {
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 48px
+}

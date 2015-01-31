@@ -1,0 +1,8 @@
+.*
+!.gitignore
+*.sublime*
+scrapbook/
+node_modules/
+build/
+fabfile.pyc
+game/assets/gfx/atlas/
