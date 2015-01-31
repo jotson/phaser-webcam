@@ -1,6 +1,6 @@
 # Phaser webcam demo
 
-[View a live demo.](http://)
+[View a live demo.](http://jotson.github.io/phaser-webcam/)
 
 For best results:
 
