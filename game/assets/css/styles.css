@@ -5,11 +5,12 @@ html, body {
     font-family: "Share Tech Mono", monospace;
 }
 
-#cam {
-    width: 360px;
-    height: 360px;
+#left-panel {
     float: left;
-    outline: none;
+    width: 360px;
+}
+
+#cam {
 }
 
 #output {

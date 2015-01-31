@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 
     "watch": {
       "atlas": {
-        files: ['**/assets/gfx/sprites/*.png', '**/assets/gfx/preloader/*.png'],
+        files: ['**/assets/gfx/*.png' ],
         tasks: ['atlas']
       },
       "scripts": {
