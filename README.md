@@ -8,6 +8,8 @@ For best results:
 2. Click the red button
 3. Right-click photos to save them
 
+This demo was intended for desktop. Performance isn't great on mobile.
+
 Created by [@yafd](http://twitter.com/yafd) with [Phaser](http://phaser.io).
 
 Copyright © 2015 [John Watson](http://flagrantdisregard.com). Licensed under MIT license.
