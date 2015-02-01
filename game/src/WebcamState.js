@@ -26,6 +26,7 @@ WebcamState.prototype.create = function() {
 
     this.webcamAvailable = !(navigator.getUserMedia === undefined);
     if (!this.webcamAvailable) {
+        document.getElementById('instructions').style.display = "none";
         document.getElementById('unsupported').style.display = "block";
         document.getElementById('cam').style.display = "none";
     } else {
