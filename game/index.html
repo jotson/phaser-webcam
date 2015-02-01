@@ -12,16 +12,25 @@
 <body>
     <div id="left-panel">
         <div id="cam"></div>
-    
-        <p>
-            Your browser must support webcams for this demo to work.
+
+        <p id="unsupported" style="display: none; color: red">
+            <b>Sorry.</b> Your browser doesn't support the
+            <a href="http://caniuse.com/#feat=stream" target="_new">Media Stream API</a>.
+            Try <a href="https://www.google.com/chrome/" target="_new">Chrome</a>
+            or <a href="https://www.mozilla.org/firefox/" target="_new">Firefox</a>.
         </p>
-        <p>For best results:</p>
-        <ol>
-            <li>Have good lighting</li>
-            <li>Click the <span style="color: red">red</span> button</li>
-            <li>Right-click photos to save them</li>
-        </ol>
+        <p id="notconnected" style="display: none; color: red">
+            <b>Your camera is not connected.</b>
+            Reload this page and allow access to your camera when prompted.
+        </p>
+        <div id="instructions">
+            <p>For best results:</p>
+            <ol>
+                <li>Have good lighting</li>
+                <li>Click the <span style="color: red">red</span> button</li>
+                <li>Right-click photos to save them</li>
+            </ol>
+        </div>
         <p>
             Created by <a href="http://twitter.com/yafd" target="_new">@yafd</a>
             with <a href="http://phaser.io" target="_new">Phaser</a>.
