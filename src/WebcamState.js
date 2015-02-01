@@ -23,9 +23,6 @@ WebcamState.prototype.create = function() {
     // Setup camera
     this.camBitmap = game.add.bitmapData(G.camWidth, G.camHeight, 'cam');
     this.cam = new Phaser.Plugin.Webcam(game, this);
-    this.cam.onConnect.add(this.cameraConnected, this);
-    this.cam.onError.add(this.cameraError, this);
-    game.add.plugin(this.cam);
 
     this.webcamAvailable = !(navigator.getUserMedia === undefined);
     if (!this.webcamAvailable) {
@@ -33,6 +30,9 @@ WebcamState.prototype.create = function() {
         document.getElementById('cam').style.display = "none";
     } else {
         this.cam.start(this.camBitmap.width, this.camBitmap.height, this.camBitmap.context);
+        this.cam.onConnect.add(this.cameraConnected, this);
+        this.cam.onError.add(this.cameraError, this);
+        game.add.plugin(this.cam);
     }
 
     // Setup working canvas
