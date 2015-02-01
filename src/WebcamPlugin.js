@@ -81,9 +81,17 @@ Phaser.Plugin.Webcam.prototype.update = function () {
 
     if (this.stream)
     {
-        this.context.drawImage(this.video, 0, 0);
+        try {
+            this.context.drawImage(this.video, 0, 0);
+        } catch (e) {
+            if (e.name == "NS_ERROR_NOT_AVAILABLE") {
+              // Just try again. This is a bug in Firefox.
+              // https://bugzilla.mozilla.org/show_bug.cgi?id=879717
+            } else {
+              throw e;
+            }
+        }
     }
-
 };
 
 /**
