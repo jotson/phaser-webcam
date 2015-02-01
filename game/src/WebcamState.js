@@ -228,7 +228,7 @@ WebcamState.prototype.pixelate = function() {
             this.tintFilter(pixel, tint.r, tint.g, tint.b);
 
             // Draw pixel at x,y in new bitmap
-            pxContext.fillStyle = "rgb(" + pixel.r + "," + pixel.g + "," + pixel.b + ");"
+            pxContext.fillStyle = "rgb(" + pixel.r + "," + pixel.g + "," + pixel.b + ")"
             pxContext.fillRect(x, y, this.pixelSize, this.pixelSize);
         }
     }
