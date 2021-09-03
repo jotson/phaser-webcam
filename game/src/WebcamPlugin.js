@@ -56,7 +56,7 @@ Phaser.Plugin.Webcam.prototype.connectCallback = function (stream) {
 
     this.stream = stream;
 
-    this.video.src = window.URL.createObjectURL(this.stream);
+    this.video.srcObject = this.stream;
 
     this.onConnect.dispatch(this.video);
 
